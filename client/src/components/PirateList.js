@@ -1,10 +1,10 @@
 import React from "react";
 import ListItem from './ListItem';
 
-const PirateList = ({pirates}) => {
+const PirateList = ({pirates, onPirateClick}) => {
 
     const piratesItems = pirates.map((pirate, index) => {
-        return <ListItem pirate={pirate} key={index}/>
+        return <ListItem pirate={pirate} key={index} onPirateClick={onPirateClick}/>
     });
 
     return (

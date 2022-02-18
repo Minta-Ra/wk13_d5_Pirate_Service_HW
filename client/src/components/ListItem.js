@@ -1,10 +1,12 @@
 import React from 'react';
-import PirateContainer from '../containers/PirateContainer';
 
+const ListItem = ({pirate, onPirateClick}) => {
 
-const ListItem = ({pirate}) => {
+    const handleClick = function() {
+        onPirateClick(pirate)
+    }
     
-    return <li>{pirate.firstName}</li>
+    return <li onClick={handleClick}>{pirate.firstName} {pirate.lastName}</li>
 
 };
 

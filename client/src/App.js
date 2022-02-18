@@ -1,9 +1,12 @@
 import './App.css';
 import PirateContainer from './containers/PirateContainer';
+import './App.css'
 
 function App() {
   return (
-    <PirateContainer/>
+    <div className="App">
+      <PirateContainer/>
+    </div>
   );
 }
 
